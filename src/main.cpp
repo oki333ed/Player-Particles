@@ -12,7 +12,7 @@ std::string defaultEffect(std::string name) {
 }
 
 // specify parameters for the setup function in the Popup<...> template
-class ParticlePopup : public geode::Popup<std::string const&> {
+class ParticlePopup : public geode::Popup {
 public:
     CCParticleSystemQuad* m_particle;
     ParticleStruct* particleData;
